@@ -191,6 +191,17 @@
                 isolation:isolate; /* keep blend effects scoped to wrapper */
         }
 
+        .teddy-bear{
+            position:absolute;
+            top:-18px;
+            left:50%;
+            transform:translateX(-50%);
+            font-size:32px;
+            z-index:6;
+            filter:drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+            pointer-events:none;
+        }
+
         /* PNG flower images positioned at sides of the envelope */
         .flower-img{
             position:absolute;
@@ -324,6 +335,11 @@
                 width:100px;
             }
 
+            .teddy-bear{
+                font-size:26px;
+                top:-16px;
+            }
+
             h1{
                 font-size:18px;
                 margin:0 0 8px;
@@ -349,6 +365,7 @@
 
             <img src="assests/flower-left.png.png" class="flower-img flower-left-png" alt="flower left">
             <img src="assests/flower-right.png -.png" class="flower-img flower-right-png" alt="flower right">
+            <div class="teddy-bear">🧸</div>
 
             <div class="envelope" onclick="openLetter()">
 
