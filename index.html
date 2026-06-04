@@ -195,11 +195,18 @@
             position:absolute;
             top:-18px;
             left:50%;
-            transform:translateX(-50%);
+            transform:translate(-50%, -30px) scale(0.75);
             font-size:32px;
             z-index:6;
             filter:drop-shadow(0 4px 6px rgba(0,0,0,0.2));
             pointer-events:none;
+            opacity:0;
+            transition:opacity 0.5s ease, transform 0.6s ease;
+        }
+
+        .envelope-wrapper.open .teddy-bear{
+            opacity:1;
+            transform:translate(-50%, 0) scale(1);
         }
 
         /* PNG flower images positioned at sides of the envelope */
