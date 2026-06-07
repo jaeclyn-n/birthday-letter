@@ -320,6 +320,99 @@
             z-index:10;
         }
 
+        /* Flower Popup */
+
+#flower-popup{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    rgba(0,0,0,.45);
+
+    z-index:99999;
+}
+
+.popup-card{
+
+    width:350px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    position:relative;
+
+    animation:
+    popupAppear .5s ease;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.2);
+}
+
+.popup-flower{
+
+    font-size:50px;
+
+    margin-bottom:15px;
+}
+
+.popup-card h2{
+
+    color:#e56b93;
+
+    margin-bottom:15px;
+}
+
+.popup-card p{
+
+    line-height:1.7;
+
+    color:#555;
+}
+
+#close-popup{
+
+    position:absolute;
+
+    right:15px;
+    top:10px;
+
+    cursor:pointer;
+
+    font-size:20px;
+}
+
+@keyframes popupAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        scale(.7);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        scale(1);
+    }
+}
+
         /* Responsive HP */
         @media(max-width:500px){
 
@@ -344,7 +437,7 @@
             }
 
             .flower{
-                font-size:90px;
+                font-size:100px;
             }
 
             .flower-left{
@@ -359,16 +452,16 @@
 
             .flower-left-png{
                 left:-115px;
-                width:125px;
+                width:200px;
             }
 
             .flower-right-png{
                 right:-115px;
-                width:125px;
+                width:200px;
             }
 
             .teddy-bear{
-                font-size:26px;
+                font-size:30px;
                 top:-60px;
             }
 
